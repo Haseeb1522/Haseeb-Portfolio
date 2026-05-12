@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haseeb Ur Rahman | DevOps Engineer</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(to right,#0f172a,#1e293b);
+      padding:40px 10%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      max-width:600px;
+    }
+
+    .hero-text h1{
+      font-size:50px;
+      color:#38bdf8;
+    }
+
+    .hero-text h2{
+      font-size:28px;
+      margin-top:10px;
+      color:#e2e8f0;
+    }
+
+    .hero-text p{
+      margin-top:15px;
+      color:#cbd5e1;
+    }
+
+    .profile-pic img{
+      width:280px;
+      height:280px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid #38bdf8;
+      box-shadow:0 0 20px rgba(56,189,248,0.5);
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    .section-title{
+      font-size:35px;
+      margin-bottom:30px;
+      color:#38bdf8;
+      border-bottom:2px solid #38bdf8;
+      display:inline-block;
+      padding-bottom:10px;
+    }
+
+    .about p{
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      margin-top:20px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+      box-shadow:0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    .offer-letter img{
+      width:100%;
+      border-radius:15px;
+      margin-top:20px;
+      border:3px solid #38bdf8;
+    }
+
+    .certificate a{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .certificate a:hover{
+      background:white;
+    }
+
+    .cv-box{
+      background:#1e293b;
+      padding:40px;
+      border-radius:15px;
+      text-align:center;
+      color:#cbd5e1;
+      border:2px dashed #38bdf8;
+    }
+
+    .contact-info p{
+      margin:10px 0;
+      font-size:18px;
+      color:#cbd5e1;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      header{
+        text-align:center;
+        justify-content:center;
+      }
+
+      .hero-text h1{
+        font-size:38px;
+      }
+
+      .profile-pic{
+        margin-top:30px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    
+    <div class="hero-text">
+      <h1>Haseeb Ur Rahman</h1>
+      <h2>DevOps Engineer</h2>
+
+      <p>
+        Passionate DevOps Engineer with hands-on experience in AWS Cloud,
+        Linux, Networking, CI/CD Pipelines, Docker, GitHub, and Infrastructure
+        Automation.
+      </p>
+    </div>
+
+    <div class="profile-pic">
+      <img src="haseeb.jfif" alt="Haseeb Profile Picture">
+    </div>
+
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+      I am a dedicated DevOps Engineer focused on cloud computing,
+      automation, and modern deployment practices. I have practical
+      experience working with AWS services and DevOps tools to build
+      scalable and reliable infrastructure solutions.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>AWS Cloud</h3>
+        <p>
+          EC2, S3, IAM, VPC, CloudWatch, Route53, Auto Scaling,
+          Load Balancer and more AWS services.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>DevOps Tools</h3>
+        <p>
+          Docker, Git, GitHub, CI/CD Pipelines,
+          Linux Administration and Automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Networking</h3>
+        <p>
+          TCP/IP, DNS, Security Groups, Subnets,
+          Routing and Infrastructure Management.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OFFER LETTER SECTION -->
+  <section class="offer-letter">
+    <h2 class="section-title">Offer Letter</h2>
+
+    <img src="Haseeb Offer Letter.jfif" alt="Offer Letter">
+  </section>
+
+  <!-- AWS CERTIFICATE SECTION -->
+  <section class="certificate">
+    <h2 class="section-title">AWS Certificate</h2>
+
+    <p>
+      Click below to view my AWS Certificate:
+    </p>
+
+    <a href="AWS Certificate.pdf" target="_blank">
+      View AWS Certificate
+    </a>
+  </section>
+
+  <!-- CV SECTION -->
+  <section>
+    <h2 class="section-title">My CV</h2>
+
+    <div class="cv-box">
+      <h3>CV Section</h3>
+      <p>
+        You can add your CV file or Resume download button here later.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-info">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p><strong>Phone:</strong> 03496872552</p>
+    <p><strong>WhatsApp:</strong> 03301076152</p>
+    <p><strong>Email:</strong> haseebmessi152@gmail.com</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Haseeb Ur Rahman | DevOps Engineer Portfolio
+    </p>
+  </footer>
+
+</body>
+</html>
