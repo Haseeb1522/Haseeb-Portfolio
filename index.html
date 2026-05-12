@@ -18,78 +18,22 @@ body{
   color:white;
 }
 
-/* HERO */
-.hero{
+/* HEADER */
+header{
   text-align:center;
-  padding:60px 20px;
-  background:linear-gradient(135deg,#0f172a,#1e293b);
+  padding:50px 20px;
+  background:#0f172a;
+  border-bottom:1px solid #1f2a3a;
 }
 
-.hero img{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  border:3px solid #38bdf8;
-  object-fit:cover;
-  margin-bottom:15px;
-}
-
-.hero h1{
-  font-size:42px;
+header h1{
+  font-size:40px;
   color:#38bdf8;
 }
 
-.hero h2{
-  font-size:18px;
+header p{
   color:#cbd5e1;
-  margin-top:5px;
-}
-
-/* TAGS (pills) */
-.tags{
-  margin-top:20px;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.tag{
-  background:#111c2e;
-  padding:8px 14px;
-  border-radius:20px;
-  font-size:13px;
-  border:1px solid #1f2a3a;
-  color:#cbd5e1;
-}
-
-/* BUTTONS */
-.buttons{
-  margin-top:20px;
-}
-
-.btn{
-  padding:10px 18px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
-  display:inline-block;
-  transition:0.3s;
-}
-
-.btn-primary{
-  background:#38bdf8;
-  color:#0b1220;
-}
-
-.btn-primary:hover{
-  background:white;
-}
-
-.btn-green{
-  background:#22c55e;
-  color:white;
+  margin-top:8px;
 }
 
 /* NAV */
@@ -97,10 +41,9 @@ nav{
   background:#111c2e;
   display:flex;
   justify-content:center;
+  flex-wrap:wrap;
   gap:25px;
   padding:12px;
-  flex-wrap:wrap;
-  border-top:1px solid #1f2a3a;
   border-bottom:1px solid #1f2a3a;
 }
 
@@ -108,45 +51,76 @@ nav a{
   color:#cbd5e1;
   text-decoration:none;
   font-size:14px;
+  transition:0.3s;
 }
 
 nav a:hover{
   color:#38bdf8;
 }
 
-/* SECTIONS */
+/* SECTION CARD */
 section{
-  padding:50px 10%;
+  padding:40px 10%;
 }
 
 .card{
-  background:#111c2e;
-  padding:20px;
+  background:white;
+  color:#0b1220;
+  padding:25px;
   border-radius:12px;
   margin-bottom:20px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 h3{
-  color:#38bdf8;
+  color:#0f172a;
   margin-bottom:10px;
+  border-bottom:1px solid #e5e7eb;
+  padding-bottom:8px;
+}
+
+/* TAGS */
+.tags{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag{
+  background:#1e293b;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  color:#cbd5e1;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:8px;
+  margin-top:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-blue{
+  background:#38bdf8;
+  color:#0b1220;
+}
+
+.btn-green{
+  background:#22c55e;
+  color:white;
 }
 
 /* IMAGE */
-.card img{
+img{
   width:100%;
   border-radius:10px;
-  border:1px solid #1f2a3a;
-}
-
-/* CONTACT */
-.contact p{
-  margin:8px 0;
-  color:#cbd5e1;
+  margin-top:10px;
 }
 
 /* FOOTER */
@@ -161,82 +135,58 @@ footer{
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="haseeb.jfif" alt="profile">
-
+<header>
   <h1>Haseeb Ur Rahman</h1>
-  <h2>DevOps Engineer</h2>
+  <p>DevOps Engineer</p>
 
   <div class="tags">
     <div class="tag">AWS</div>
-    <div class="tag">Linux</div>
     <div class="tag">Docker</div>
+    <div class="tag">Kubernetes</div>
     <div class="tag">CI/CD</div>
-    <div class="tag">GitHub</div>
+    <div class="tag">Linux</div>
   </div>
 
-  <div class="buttons">
-    <a href="#" class="btn btn-primary">Hire Me</a>
+  <div style="margin-top:15px;">
+    <a href="#" class="btn btn-blue">Hire Me</a>
     <a href="https://wa.me/923301076152" class="btn btn-green">WhatsApp</a>
   </div>
-</div>
+</header>
 
-<!-- NAV -->
 <nav>
   <a href="#">Home</a>
   <a href="#">About</a>
   <a href="#">Skills</a>
-  <a href="#">Documents</a>
+  <a href="#">Projects</a>
   <a href="#">Contact</a>
 </nav>
 
-<!-- ABOUT -->
 <section>
   <div class="card">
     <h3>About Me</h3>
     <p>
-      I am a DevOps Engineer specializing in AWS Cloud, CI/CD pipelines,
-      Linux administration, Docker and infrastructure automation.
+      I am a DevOps Engineer with hands-on experience in AWS, Docker, CI/CD pipelines,
+      and Linux systems. I build scalable cloud infrastructure and automate deployment workflows.
     </p>
   </div>
-</section>
 
-<!-- SKILLS -->
-<section>
   <div class="card">
     <h3>Skills</h3>
-    <p>AWS EC2, S3, IAM, VPC, CloudWatch, Route53</p>
-    <p>Docker, Git, GitHub, Jenkins</p>
-    <p>Linux, Networking, Automation</p>
+    <p>AWS EC2, S3, IAM, VPC, Route53</p>
+    <p>Docker, Jenkins, GitHub Actions</p>
+    <p>Linux, Terraform, Ansible</p>
   </div>
-</section>
 
-<!-- DOCUMENTS -->
-<section>
   <div class="card">
-    <h3>Offer Letter</h3>
-    <img src="Haseeb Offer Letter.jfif">
+    <h3>Certificate</h3>
+    <img src="AWS Certificate.pdf" alt="AWS Certificate">
   </div>
 
   <div class="card">
-    <h3>AWS Certificate</h3>
-    <a class="btn btn-primary" href="AWS Certificate.pdf" target="_blank">
-      View Certificate
-    </a>
+    <h3>Offer Letter</h3>
+    <img src="Haseeb Offer Letter.jfif" alt="Offer Letter">
   </div>
-</section>
 
-<!-- CV -->
-<section>
-  <div class="card">
-    <h3>CV</h3>
-    <p>CV will be added soon.</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact">
   <div class="card">
     <h3>Contact</h3>
     <p><b>Phone:</b> 03496872552</p>
